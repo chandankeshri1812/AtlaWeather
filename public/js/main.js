@@ -94,12 +94,22 @@ const getInfo = async (event) => {
             if (tempMood == "Clear") {
                 temp_status.innerHTML =
                     "<i class='fas  fa-sun' style='color: #eccc68;'></i>";
-            } else if (tempMood == "Clouds") {
-                "<i class='fas  fa-cloud' style='color: #f1f2f6;'></i>";
-            } else if (temMoods == "Rain") {
+            }
+            else if (tempMood == "Clouds") {
+                temp_status.innerHTML =
+                    "<i class='fas  fa-cloud' style='color: #f1f2f6;'></i>";
+            }
+            else if (temMoods == "Rain") {
                 temp_status.innerHTML =
                     "<i class='fas  fa-cloud-rain' style='color: #a4b0be;'></i>";
-            } else {
+            }
+            else if (tempMood == "Haze") {
+                temp_status.innerHTML =
+                    "<i class='fas  fa-sun-haze' style='color: #FFFF00;'></i>";
+
+            }
+
+            else {
                 temp_status.innerHTML =
                     "<i class='fas  fa-cloud' style='color:#f1f2f6;'></i>";
             }
