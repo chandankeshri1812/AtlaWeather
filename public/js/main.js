@@ -18,7 +18,7 @@ const deg = document.getElementById('deg');
 const gust = document.getElementById('gust');
 const sunrise = document.getElementById('sunrise');
 const sunset = document.getElementById('sunset');
-
+// const readMoreDiv= document.getElementById("readMoreDiv");
 
 const getInfo = async (event) => {
     event.preventDefault();
@@ -99,13 +99,13 @@ const getInfo = async (event) => {
                 temp_status.innerHTML =
                     "<i class='fas  fa-cloud' style='color: #f1f2f6;'></i>";
             }
-            else if (temMoods == "Rain") {
+            else if (tempMood == "Rain") {
                 temp_status.innerHTML =
                     "<i class='fas  fa-cloud-rain' style='color: #a4b0be;'></i>";
             }
             else if (tempMood == "Haze") {
                 temp_status.innerHTML =
-                    "<i class='fas  fa-sun-haze' style='color: #FFFF00;'></i>";
+                    "<i class='fas  fa-sun-haze' style='color: blue;'></i>";
 
             }
 
@@ -127,7 +127,9 @@ const getInfo = async (event) => {
 
         } catch {
             city_name.innerText = "Plz enter the name city name properly";
+            // readMoreDiv.innerText="";
             data_hide.classList.add('data_hide');
+        
 
         }
     }
