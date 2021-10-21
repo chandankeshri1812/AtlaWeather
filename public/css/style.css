@@ -25,7 +25,7 @@
  .row{
      margin: 0;
  }
- .main-menu{
+  .main-menu{
      background-color: var(--main-bg);
  }
  .navbar{
@@ -50,7 +50,7 @@ padding: 2rem 0;
      
  }
 
- .fa-snowflake{
+ /* .fa-snowflake{
      transition: all linear;
      animation: rot 2s  linear infinite;
      color: var(--main-color);
@@ -65,7 +65,7 @@ padding: 2rem 0;
         transform: rotate(360deg);
 
      }
- }
+ } */
 
  /* main header */
  .main_header_left{
@@ -114,6 +114,7 @@ color: var(--main-color);
    filter:drop-shadow(0 0.5rem 1rem rgba(0,0,0.3));
    border-radius: 3rem;
 }
+
 
 /* error page style */
 .errimg img{

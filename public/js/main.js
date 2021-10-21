@@ -17,7 +17,7 @@ const speed = document.getElementById('speed');
 const deg = document.getElementById('deg');
 const gust = document.getElementById('gust');
 const sunrise = document.getElementById('sunrise');
-const sunset = document.getElementById('sunset');
+const sunset = document.getElementById('sunset');7
 // const readMoreDiv= document.getElementById("readMoreDiv");
 
 const getInfo = async (event) => {
@@ -26,9 +26,7 @@ const getInfo = async (event) => {
 
     if (cityval === "") {
         city_name.innerText = `Plz write the name before search`;
-
         data_hide.classList.add('data_hide');
-
     }
     else {
         try {
